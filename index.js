@@ -16,6 +16,15 @@ const corsOptions = {
     // origin: "https://gauravrawat123.netlify.app",
         origin: "http://localhost:3000",
     credentials: true,
+     optionSuccessStatus: 200,
+    headers: true,
+    exposedHeaders: 'Set-Cookie',
+    methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'],
+    allowedHeaders: [
+        'Access-Control-Allow-Origin',
+        'Content-Type',
+        'Authorization'
+    ]
   };
 
   app.use(express.json());
