@@ -4,8 +4,9 @@ const secretKey=process.env.KEY;;
 
 const athenticate = async(req,res,next)=>{
     try {
+        console.log(  "gammu ");
         const token = req.cookies.bazar;
-       
+       console.log(token + "gammu ");
         const verifytoken = jwt.verify(token,secretKey);
         console.log(verifytoken + "gammu ");
 
