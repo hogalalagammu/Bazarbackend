@@ -13,7 +13,8 @@ const PORT=process.env.PORT || 8005;
 
 
 const corsOptions = {
-    origin: "https://gauravrawat123.netlify.app",
+    // origin: "https://gauravrawat123.netlify.app",
+        origin: "http://localhost3000/",
     credentials: true,
   };
 
