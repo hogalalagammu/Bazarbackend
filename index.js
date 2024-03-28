@@ -13,7 +13,7 @@ const PORT=process.env.PORT || 8005;
 
 
 const corsOptions = {
-    origin: "*",
+    origin: "https://gauravrawat123.netlify.app",
     credentials: true,
   };
 
