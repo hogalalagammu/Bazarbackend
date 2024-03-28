@@ -222,7 +222,7 @@ router.post("/login",async(req,res)=>{
             res.status(400).json({error:"invalid detail"});
         }
     } catch (error) {
-        
+        res.status(401).json(error);
     }
 })
 
