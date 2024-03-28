@@ -7,7 +7,7 @@ const athenticate = async(req,res,next)=>{
         const token = req.cookies.bazar;
        
         const verifytoken = jwt.verify(token,secretKey);
-        console.log(verifytoken);
+        console.log(verifytoken + "gammu ");
 
         const rootuser= await User.findOne({_id:verifytoken._id,"tokens.token":token})
         console.log(rootuser);
