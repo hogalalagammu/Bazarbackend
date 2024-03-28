@@ -8,6 +8,16 @@ const athenticate = async(req,res,next)=>{
         console.log(req.data + "gammu ");
         const token = req.cookies.bazar;
        console.log(token + "gammu ");
+        console.log(req.cookies); // Logging cookies
+console.log(req.headers); // Logging request headers
+console.log(req.method); // Logging HTTP method (GET, POST, etc.)
+console.log(req.url); // Logging request URL
+console.log(req.params); // Logging URL parameters
+console.log(req.query); // Logging query parameters
+console.log(req.body); // Logging request body (if applicable, for POST requests)
+console.log(req.ip); // Logging client IP address
+console.log(req.originalUrl); // Logging original request URL
+console.log(req.route); // Logging route details
         const verifytoken = jwt.verify(token,secretKey);
         console.log(verifytoken + "gammu ");
 
