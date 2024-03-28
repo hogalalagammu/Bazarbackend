@@ -4,7 +4,7 @@ const secretKey=process.env.KEY;;
 
 const athenticate = async(req,res,next)=>{
     try {
-        console.log(  "gammu ");
+        console.log( secretKey+ "gammu ");
         console.log(req + "gammu ");
         const token = req.cookies.bazar;
        console.log(token + "gammu ");
